@@ -8,8 +8,8 @@ function calcular() {
     return;
 }
 
-    // Calcular o valor com mensagem
-    let resultado = etanol / gasolina;
+    // Calcular o valor
+    let resultado = etanol / gasolina; 
 
     if (etanol <= 0.70 * gasolina) {
         document.getElementById('status').src = "./img/tanqueEtanol.png";
@@ -20,7 +20,7 @@ function calcular() {
 }
 }
 
-// Função Limpar
+//Função Limpar
 function limpar() {
     document.getElementById('status').src= './img/tanque.png';
     document.getElementById('mensagem').innerHTML= '';

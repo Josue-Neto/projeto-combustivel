@@ -16,11 +16,10 @@
     <div class="container fade-in">
     <form action="" id="formulario">
         <label for="combustivel">COMBUSTIVEL:</label>
-        <p class="mensagem">Insira os preços atuais do etanol e da gasolina 
-            (em reais) nos campos abaixo. Ex: 3.59</p>
+        <p class="mensagem">Insira os preços atuais do etanol e da gasolina (em reais) nos campos abaixo. Ex: 3.59</p>
 
         <br>
-
+        
         <input type="number" name="etanol" id="etanol" placeholder="Etanol" step="0.01">
 
         <input type="number" name="gasolina" id="gasolina" placeholder="Gasolina" step="0.01">
