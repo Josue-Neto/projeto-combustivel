@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shorcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Abastecimento</title>
+</head>
+<body>
+    <nav class="navbar fade-in">
+        <h1> Combustível Ideal</h1>
+</nav>
+
+    <div class="container fade-in">
+    <form action="" id="formulario">
+        <label for="combustivel">COMBUSTIVEL:</label>
+        <p class="mensagem">Insira os preços atuais do etanol e da gasolina (em reais) nos campos abaixo. Ex: 3.59</p>
+
+        <br>
+        
+        <input type="number" name="etanol" id="etanol" placeholder="Etanol" step="0.01">
+
+        <input type="number" name="gasolina" id="gasolina" placeholder="Gasolina" step="0.01">
+
+        <br>
+
+        <input type="button" value="CALCULAR" onclick="calcular()">
+        <input type="reset" value="LIMPAR" onclick="limpar()">
+
+        <br>
+        
+    </form>
+    <img src="./img/tanque.png" alt="tanque-combustivel" class="img-tanque" id="status">
+    <p id="mensagem" class="resultado">Resultado:</p>
+    </div>
+</body>
+</html>

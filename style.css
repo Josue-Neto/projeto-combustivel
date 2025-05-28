@@ -1,0 +1,130 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #159b3959;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9f2e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/posto-verde-ceu.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 80px;
+}
+ 
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+ 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+ 
+input[type="number"]:focus {
+    border-color: #159b38;
+    outline: none;
+}
+ 
+input[type="button"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 8px;
+    background-color: #159b38;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #0d6b2f;
+}
+ 
+.img-tanque {
+    width: 80%;
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+ 
+.mensagem {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+ .resultado {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.fade-in {
+  animation: fadeSlide 2.0s ease forwards;
+  opacity: 0;
+}
+
+ @keyframes fadeSlide {
+  from{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
